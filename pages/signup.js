@@ -6,7 +6,7 @@ import Background from '../components/Background'
 
 import AppHome from '../components/AppHome'
 
-export default function Home() {
+export default function Login() {
   
   return(
     <>
