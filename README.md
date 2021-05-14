@@ -1,34 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TopShot Tracker
+This project is built for [NBA Topshots](https://nbatopshot.com/). If you have never heard about topshots, I highly recommend reading this [article](https://www.cnbc.com/2021/02/28/230-million-dollars-spent-on-nba-top-shot.html).
 
-## Getting Started
+There are two main features of TopshotTracker
+* The site will analyze the latest listings on topshot every 15 minutes and keep track of any deals that are listed. A deal is defined as a Topshot Moment that is less than 85% of the average price of the cheapest 5 listings (not including the newest listing). The moment also needs to be more than 5$ cheaper than the next cheapest listing, so to filter out a user listing a 5$ card for 4$.
+* A user can create an account and see the total value of their topshot collection, and a list of all their moments and their respective values
+--------------------------------------
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## [Live Site](https://topshot-tracker-rogutkuba.vercel.app/)
